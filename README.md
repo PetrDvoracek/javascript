@@ -51,3 +51,13 @@ const logSkyColor = () => {
 console.log(color); // ReferenceError
 ```
 Block scope is a powerful tool in JavaScript, since it allows us to define variables with precision, and not pollute the global namespace. If a variable does not need to exist outside a block— it shouldn’t! 
+
+## Push is akward
+```
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+
+itemTracker.push('item 3', 'item 4');
+
+console.log(itemTracker); 
+// Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+```
