@@ -36,3 +36,18 @@ const squareNum = (num) => {
 //equals
 const squareNum = num => num * num;
 ```
+## Scope pollution, good scoping
+```
+const logSkyColor = () => {
+  const dusk = true; //important
+  let color = 'blue'; 
+  if (dusk) {
+    let color = 'pink';
+    console.log(color); // pink
+  }
+  console.log(color); // blue 
+};
+
+console.log(color); // ReferenceError
+```
+Block scope is a powerful tool in JavaScript, since it allows us to define variables with precision, and not pollute the global namespace. If a variable does not need to exist outside a block— it shouldn’t! 
