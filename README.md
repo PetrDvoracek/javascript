@@ -28,3 +28,11 @@ function greeting (name = 'stranger') {
   console.log(`Hello, ${name}!`)
 }
 ```
+## Arrow function
+```
+const squareNum = (num) => {
+  return num * num;
+};
+//equals
+const squareNum = num => num * num;
+```
