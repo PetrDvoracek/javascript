@@ -61,3 +61,5 @@ itemTracker.push('item 3', 'item 4');
 console.log(itemTracker); 
 // Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
 ```
+## arrays
+Some arrays methods that are available to JavaScript developers include: .join(), .slice(), .splice(), .shift(), .unshift(), and .concat() amongst many others. Using these built-in methods make it easier to do some common tasks when working with arrays. 
