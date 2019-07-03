@@ -185,3 +185,5 @@ console.log(residence); // Prints 'Transylvania'
 const { residence } = vampire; 
 console.log(residence); // Prints 'Transylvania'
 ```
+### Create new object from 2 other
+[link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
