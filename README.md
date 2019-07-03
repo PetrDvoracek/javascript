@@ -177,3 +177,11 @@ const monsterFactory = (name, age) => {
   }
 };
 ```
+### Destructured assignment 
+```
+const residence = vampire.residence; 
+console.log(residence); // Prints 'Transylvania' 
+//EQUALS
+const { residence } = vampire; 
+console.log(residence); // Prints 'Transylvania'
+```
