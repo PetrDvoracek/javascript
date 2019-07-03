@@ -86,3 +86,32 @@ const newSum = newNumbers.reduce((accumulator, currentValue) => {
 }, 10)
 console.log(newSum)
 ```
+
+## Objects
+You can acces Object's properties using dot or bracket notation.
+### Bracket notation
+```
+let returnAnyProp = (objectName, propName) => objectName[propName];
+
+returnAnyProp(spaceship, 'homePlanet'); // Returns 'Earth'
+```
+If we tried to write our returnAnyProp() function with dot notation (objectName.propName) the computer would look for a key of 'propName' on our object and not the value of the propName parameter. 
+### Delete property
+```
+const spaceship = {
+  'Fuel Type': 'Turbo Fuel',
+  homePlanet: 'Earth',
+  mission: 'Explore the universe' 
+};
+
+delete spaceship.mission;  // Removes the mission property
+```
+### Object's method
+```
+const alienShip = {
+  invade () { 
+    console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
+  }
+};
+alienShip.invade() 
+```
