@@ -187,3 +187,13 @@ console.log(residence); // Prints 'Transylvania'
 ```
 ### Create new object from 2 other
 [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+
+## Browser compatibility
+[caniuse](https://caniuse.com/#search=var)
+
+### Babel
+transpiles ES6 code to ES5
+```
+npm install babel-cli
+npm install babel-preset-env
+```
