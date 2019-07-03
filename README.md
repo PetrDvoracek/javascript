@@ -115,3 +115,21 @@ const alienShip = {
 };
 alienShip.invade() 
 ```
+### Passed by refference
+Objects are passed to the function by a refference, so function mutates them.
+```
+const spaceship = {
+  homePlanet : 'Earth',
+  color : 'silver'
+};
+
+let paintIt = obj => {
+  obj.color = 'glorious gold'
+};
+
+paintIt(spaceship);
+
+spaceship.color // Returns 'glorious gold'
+
+```
+But this does not work in the case of redeclaration of the object! [link](https://discuss.codecademy.com/t/about-pass-by-reference-in-javascript/363663)
