@@ -161,3 +161,19 @@ const bankAccount = {
   _amount: 1000
 }
 ```
+### Factory 
+```
+const monsterFactory = (name, age) => {
+  return { 
+    name: name,
+    age: age
+  }
+};
+//EQUALS ( property value shorthand )	
+const monsterFactory = (name, age) => {
+  return { 
+    name,
+    age 
+  }
+};
+```
