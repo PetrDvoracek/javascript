@@ -133,3 +133,31 @@ spaceship.color // Returns 'glorious gold'
 
 ```
 But this does not work in the case of redeclaration of the object! [link](https://discuss.codecademy.com/t/about-pass-by-reference-in-javascript/363663)
+
+### Arrow function and objects
+```
+const goat = {
+  dietType: 'herbivore',
+  makeSound() {
+    console.log('baaa');
+  },
+  diet: () => {
+    console.log(this.dietType);
+  }
+};
+
+goat.diet(); // Prints undefined
+```
+Arrow functions inherently bind, or tie, an already defined this value to the function itself that is NOT the calling object. In the code snippet above, the value of this is the global object, or an object that exists in the global scope, which doesn’t have a dietType property and therefore returns undefined. 
+
+The key takeaway from the example above is to avoid using arrow functions when using this in a method! 
+
+[global object](https://developer.mozilla.org/en-US/docs/Glossary/Global_object)
+[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)	
+### Privacy
+JavaScript does not have any mechanism to prevent developers to change private properties. the convention is using `_` at the begining of the property so everybody knows they should not change the property.
+```
+const bankAccount = {
+  _amount: 1000
+}
+```
