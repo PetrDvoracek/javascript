@@ -230,3 +230,8 @@ function orderSunglasses(){
 let orderPromise = orderSunglasses()
 console.log(orderPromise)
 ```
+### .then
+two arguments 
+ - onFulfilled function when *Success*
+ - onRejected function when *Fails*
+**always returns promise**
