@@ -197,3 +197,36 @@ transpiles ES6 code to ES5
 npm install babel-cli
 npm install babel-preset-env
 ```
+
+## Modules
+
+```
+let Menu = {};
+Menu.specialty = "Roasted Beet Burger with Mint Sauce";
+
+module.exports = Menu; 
+```
+in different file, load it with `const Airplane = require('./1-airplane.js')`
+
+## Async
+```
+const inventory = {
+  sunglasses: 1900,
+  pants: 1088,
+  bags: 1344
+};
+
+function myExecutor(resolve, reject) {
+  if (inventory.sunglasses > 0){
+    resolve('Sunglasses order processed.')
+  }else{
+    reject('That item is sold out.')
+  }
+}
+
+function orderSunglasses(){
+  return new Promise(myExecutor)
+}
+let orderPromise = orderSunglasses()
+console.log(orderPromise)
+```
